@@ -16,6 +16,8 @@ jobs:
     - name: Replace placeholder with secret
       run: |
         sed -i 's|REPLACE_WITH_IP|'"${{ secrets.SERVER_IP }}"'|g' script.js
+        echo "Contents of script.js after replacement:"
+        cat script.js
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
