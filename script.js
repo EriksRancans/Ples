@@ -1,23 +1,19 @@
-// Replace with the IP or domain of your Plex server
-const serverUrl = "REPLACE_WITH_IP";
+const serverUrl = "REPLACE_WITH_IP"; // This should be replaced by the GitHub Action
 
-// Function to check server status
+console.log(`Using server URL: ${serverUrl}`); // Debugging: Check the replaced server URL
+
 function checkServerStatus() {
   fetch(serverUrl, { method: "GET", mode: "no-cors" })
     .then(() => {
-      // If the server responds, set status to online
       document.getElementById("status").textContent = "Online";
       document.getElementById("status").className = "online";
     })
     .catch(() => {
-      // If the request fails, set status to offline
       document.getElementById("status").textContent = "Offline";
       document.getElementById("status").className = "offline";
     });
 }
 
-// Initial check when the page loads
+// Check server status initially and every 10 seconds
 checkServerStatus();
-
-// Optional: Automatically refresh the status every 30 seconds
 setInterval(checkServerStatus, 10000);
