@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   deploy:
@@ -15,7 +15,7 @@ jobs:
 
     - name: Replace placeholder with secret
       run: |
-        sed -i 's|REPLACE_WITH_IP|'"${{ secrets.IP }}"'|g' script.js
+        sed -i 's|REPLACE_WITH_IP|'"${{ secrets.SERVER_IP }}"'|g' script.js
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
