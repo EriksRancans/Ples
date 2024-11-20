@@ -1,6 +1,6 @@
 const serverUrl = "REPLACE_WITH_IP"; // This should be replaced by the GitHub Action
 
-console.log(`Using server URL: ${serverUrl}`); // Debugging: Check the replaced server URL
+console.log(`Using server URL: ${serverUrl}`); // Debugging: Check the replaced server URLs
 
 function checkServerStatus() {
   fetch(serverUrl, { method: "GET", mode: "no-cors" })
