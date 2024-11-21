@@ -1,4 +1,4 @@
-const serverUrl = "http://62.66.213.231:14718";
+const serverUrl = "https://62.66.213.231:14718";
 
 function checkServerStatus() {
   fetch(serverUrl, { method: "GET", mode: "no-cors" }) // Use "no-cors" to bypass CORS issues
