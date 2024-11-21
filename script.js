@@ -1,4 +1,4 @@
-const serverUrl = "REPLACE_WITH_IP"; // This should be replaced by the GitHub Action
+const serverUrl = "http://62.66.213.231:14718";
 
 console.log(`Using server URL: ${serverUrl}`); // Debugging: Check the replaced server URLs
 
