@@ -15,7 +15,7 @@ jobs:
 
     - name: Replace placeholder with secret
       run: |
-        sed -i 's|REPLACE_WITH_IP|'"${{ secrets.SERVER_IP }}"'|g' script.js
+        sed -i 's|REPLACE_WITH_IP|http://62.66.213.231:14718|g' script.js
         echo "Contents of script.js after replacement:"
         cat script.js
 
