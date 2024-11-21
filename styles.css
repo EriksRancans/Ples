@@ -1,0 +1,36 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #282a2d !important;
+  color: white;
+  font-weight: 500;
+}
+
+/* Status box styling */
+#status {
+  font-size: 24px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+  text-transform: uppercase;
+}
+
+/* Online status */
+.online {
+  color: white;
+  background-color: green;
+}
+
+/* Offline status */
+.offline {
+  color: white;
+  background-color: red;
+}
+
+#logo {
+  max-height: 150px;
+  margin-top: 3rem;
+}
